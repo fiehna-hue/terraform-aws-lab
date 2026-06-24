@@ -19,7 +19,7 @@ variable "instance_names" {
 variable "enable_monitoring" {
   description = "Enable detailed monitoring for EC2 instances"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "instance_type" {
