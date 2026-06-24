@@ -64,3 +64,7 @@ terraform destroy
 ## Security Notes
 - Terraform state and local variable files are git-ignored.
 - Keep secrets and account-specific values out of commits.
+
+## IAM Note
+- `enable_monitoring` defaults to `false` to avoid `ec2:MonitorInstances` permission errors on limited IAM users.
+- If your IAM policy allows detailed monitoring, set `enable_monitoring = true` in `terraform.tfvars`.
